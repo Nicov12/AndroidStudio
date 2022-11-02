@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">UVAndroid20222</string>
     <string name="btn_back">Back</string>
-    <string name="btn_login">No me has tocado</string>
+    <string name="btn_login">Ver recibo</string>
+    <string name="Nombre1">Ingresa tu nombre</string>
+    <string name="Nombre2">Nombre</string>
+    <string name="BotonEnviar">Enviar</string>
+    <string name="BotonRegresar">Regresar</string>
+    <string name="ValorCuenta">Valor de cuenta:</string>
+    <string name="Cantidad">Cantidad</string>
+    <string name="ComprarLeche">Añadir</string>
+    <string name="ComprarAgua">Añadir</string>
+    <string name="Total">Ver Total</string>
 </resources>

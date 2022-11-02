@@ -9,41 +9,85 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edCantidad"
-        android:layout_width="wrap_content"
+        android:id="@+id/et1"
+        android:layout_width="193dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:hint="Pick your user name" />
-
-    <EditText
-        android:id="@+id/edValor"
-        android:layout_width="wrap_content"
-        android:editable="false"
-        android:layout_height="wrap_content"
-        android:hint="Pick your password"
-        android:inputType="numberDecimal" />
+        android:ems="10"
+        android:hint="@string/Nombre1"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorLink="#03A9F4" />
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:text="@string/btn_login"
+        android:backgroundTint="#03A9F4"
         android:onClick="saludar"
+        android:text="@string/btn_login"
         tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="276dp" />
+
     <Button
         android:id="@+id/btnDelegado"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:text="Navegar"
+        android:backgroundTint="#03A9F4"
+        android:onClick="Enviar"
+        android:text="Comprar"
         tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="276dp" />
+
     <Button
         android:id="@+id/btnInterfaz"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:onClick="Saludar2"
         android:text="Saludar"
         tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="276dp" />
+
+    <LinearLayout
+        android:id="@+id/recibo"
+        android:layout_width="300dp"
+        android:layout_height="163dp"
+        android:orientation="vertical"
+        android:padding="30px"
+        android:textAlignment="center"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/etRecibo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15px"
+            android:text="RECIBO DE PAGO"
+            android:textAlignment="center"
+            android:textColor="#F6F0F0"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/edCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Cantidad"
+            android:inputType="none"
+            android:textAlignment="center"
+            android:focusable="false"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/edValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="@string/ValorCuenta"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:focusable="false"
+            android:visibility="invisible" />
+    </LinearLayout>
 
 </LinearLayout>
